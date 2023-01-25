@@ -236,6 +236,23 @@
   flex-direction: column;
 }
 
+.proper-text {
+  font-size: larger;
+  font-weight: 600;
+}
+
+.none {
+  text-decoration: none;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
 .no-js:not(html) {
   display: none !important;
 }

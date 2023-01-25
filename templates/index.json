@@ -20,8 +20,8 @@
         "banner_text": {
           "type": "banner-text",
           "settings": {
-            "text": "New clothes for the season!",
-            "text_decoration": "none"
+            "text": "New clothes for the season - Nice!",
+            "text_decoration": "italics"
           }
         },
         "button": {

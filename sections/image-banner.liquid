@@ -27,6 +27,9 @@
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
+  :root {
+    --banner-text-color: {{ settings.banner_text_color.red }}, {{ settings.banner_text_color.green }}, {{ settings.banner_text_color.blue }};
+  }
 {%- endstyle -%}
 
 <div
@@ -106,8 +109,8 @@
               <span>{{ block.settings.text | escape }}</span>
             </div>
           {%- when 'banner-text' -%}
-            <div class="banner__text" {{ block.shopify_attributes }}>
-              <span>{{ block.settings.text | escape }} | {{ block.settings.text_decoration | escape }} | {{ settings.banner_text_color | escape }}</span>
+            <div class="proper-text {{ block.settings.text_decoration }} banner-text-color" {{ block.shopify_attributes }}>
+              <span>{{ block.settings.text | escape }}</span>
             </div>
           {%- when 'buttons' -%}
             <div
