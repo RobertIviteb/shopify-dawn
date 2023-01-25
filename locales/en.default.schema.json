@@ -192,6 +192,14 @@
         }
       }
     },
+    "banner-text": {
+      "name": "Banner Text",
+      "settings": {
+        "color": {
+          "label": "Banner Text Color"
+        }
+      }
+    },
     "typography": {
       "name": "Typography",
       "settings": {
@@ -1201,6 +1209,26 @@
                 "label": "Uppercase"
               },
               "label": "Text style"
+            }
+          }
+        },
+        "banner-text": {
+          "name": "Banner Text",
+          "settings": {
+            "text": {
+              "label": "Text Content"
+            },
+            "text_decoration": {
+              "label": "Text Decoration",
+              "options__1": {
+                "label": "None"
+              },
+              "options__2": {
+                "label": "Undeline"
+              },
+              "options__3": {
+                "label": "Italics"
+              }
             }
           }
         },

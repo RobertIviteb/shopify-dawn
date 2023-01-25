@@ -65,13 +65,13 @@
     ]
   },
   {
-    "name": "banner-text",
+    "name": "t:settings_schema.banner-text.name",
     "settings": [
       {
         "type": "color",
         "id": "banner_text_color",
         "default": "#FFFFFF",
-        "label": "Banner Text Color"
+        "label": "t:settings_schema.banner-text.settings.color.label"
       }
     ]
   },
