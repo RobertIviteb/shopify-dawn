@@ -65,6 +65,17 @@
     ]
   },
   {
+    "name": "banner-text",
+    "settings": [
+      {
+        "type": "color",
+        "id": "banner_text_color",
+        "default": "#FFFFFF",
+        "label": "Banner Text Color"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {

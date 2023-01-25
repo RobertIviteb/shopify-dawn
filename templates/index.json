@@ -6,7 +6,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Buy Clothes",
             "heading_size": "h0"
           }
         },
@@ -15,6 +15,13 @@
           "settings": {
             "text": "Give customers details about the banner image(s) or content on the template.",
             "text_style": "body"
+          }
+        },
+        "banner_text": {
+          "type": "banner-text",
+          "settings": {
+            "text": "New clothes for the season!",
+            "text_decoration": "none"
           }
         },
         "button": {
@@ -32,6 +39,7 @@
       "block_order": [
         "heading",
         "text",
+        "banner_text",
         "button"
       ],
       "settings": {
@@ -39,7 +47,7 @@
         "image_2": "shopify:\/\/shop_images\/browsing-clothing.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",

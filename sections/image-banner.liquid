@@ -105,6 +105,10 @@
             <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
               <span>{{ block.settings.text | escape }}</span>
             </div>
+          {%- when 'banner-text' -%}
+            <div class="banner__text" {{ block.shopify_attributes }}>
+              <span>{{ block.settings.text | escape }} | {{ block.settings.text_decoration | escape }} | {{ settings.banner_text_color | escape }}</span>
+            </div>
           {%- when 'buttons' -%}
             <div
               class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
@@ -399,6 +403,39 @@
       ]
     },
     {
+      "type": "banner-text",
+      "name": "Banner Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "New clothes for the season!",
+          "label": "Banner Text"
+        },
+        {
+          "type": "select",
+          "id": "text_decoration",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "underline",
+              "label": "Undeline"
+            },
+            {
+              "value": "italics",
+              "label": "Italics"
+            }
+          ],
+          "default": "none",
+          "label": "Text decoration"
+        }
+      ]
+    },
+    {
       "type": "buttons",
       "name": "t:sections.image-banner.blocks.buttons.name",
       "limit": 1,
@@ -451,6 +488,9 @@
         },
         {
           "type": "text"
+        },
+        {
+          "type": "banner-text"
         },
         {
           "type": "buttons"
