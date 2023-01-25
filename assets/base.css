@@ -223,6 +223,19 @@
 
 /* base */
 
+.align-space-betwen {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
 .no-js:not(html) {
   display: none !important;
 }
@@ -2341,7 +2354,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 }
 
 .header__heading-link {
-  display: inline-block;
+  display: flex;
   padding: 0.75rem;
   text-decoration: none;
   word-break: break-word;

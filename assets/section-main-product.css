@@ -343,6 +343,10 @@ a.product__text {
   margin-bottom: 1.5rem;
 }
 
+.product__title_red {
+  color: red;
+}
+
 .product__title > * {
   margin: 0;
 }

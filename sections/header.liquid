@@ -396,8 +396,8 @@
       {%- if request.page_type == 'index' -%}
         <h1 class="header__heading">
       {%- endif -%}
-          <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-            {%- if settings.logo != blank -%}
+          <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset align-space-betwen">
+            
               {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
               {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
               {{ settings.logo | image_url: width: 500 | image_tag:
@@ -407,9 +407,10 @@
                 width: settings.logo_width,
                 alt: logo_alt
               }}
-            {%- else -%}
+              <div class="header__menu flex align-space-betwen column">
               <span class="h2">{{ shop.name }}</span>
-            {%- endif -%}
+              <span class="h4">{{ shop.description }}</span>
+              </div>
           </a>
       {%- if request.page_type == 'index' -%}
         </h1>
