@@ -80,6 +80,9 @@
         #Slide-{{ section.id }}-{{ forloop.index }} .banner__media::after {
           opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
         }
+        #Slide-{{ section.id }}-{{ forloop.index }} .content-container {
+          background-color: rgb(255, 255, 255, {{block.settings.container_background_opacity}})
+        }
       </style>
       <div class="slideshow__slide grid__item grid--1-col slider__slide"
         id="Slide-{{ section.id }}-{{ forloop.index }}"
@@ -417,6 +420,15 @@
           "unit": "%",
           "label": "t:sections.slideshow.blocks.slide.settings.image_overlay_opacity.label",
           "default": 0
+        },
+        {
+          "type": "range",
+          "id": "container_background_opacity",
+          "min": 0,
+          "max": 1,
+          "step": 0.1,
+          "label": "t:sections.slideshow.blocks.slide.settings.container_background_opacity.label",
+          "default": 1
         },
         {
           "type": "select",

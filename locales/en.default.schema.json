@@ -3015,6 +3015,9 @@
             "image_overlay_opacity": {
               "label": "Image overlay opacity"
             },
+            "container_background_opacity": {
+              "label": "Container background color opacity"
+            },
             "color_scheme": {
               "info": "Visible when container displayed."
             },
