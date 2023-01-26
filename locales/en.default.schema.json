@@ -432,6 +432,25 @@
         }
       }
     },
+    "day-product": {
+      "name": "Product of the Day",
+      "settings": {
+        "content-align": {
+          "label": "Align Section Content",
+          "options__1": "Left",
+          "options__2": "Center",
+          "options__3": "Right"
+        }
+      },
+      "blocks": {
+        "heading": {
+          "name": "Heading"
+        },
+        "subheading": {
+          "name": "Subheading"
+        }
+      }
+    },
     "announcement-bar": {
       "name": "Announcement bar",
       "blocks": {
