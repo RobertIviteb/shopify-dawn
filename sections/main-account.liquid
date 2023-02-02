@@ -141,6 +141,9 @@
     <div>
       <h2>{{ 'customer.account.details' | t }}</h2>
 
+      <h3>Phone nr: {% if customer.phonme %}{{customer.phonme}}{% else %}No phone number{% endif %}</h3>
+      <h3>Email: {{ customer.email }}</h3>
+
       {{ customer.default_address | format_address }}
 
       <a href="{{ routes.account_addresses_url }}">
